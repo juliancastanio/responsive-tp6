@@ -1,0 +1,387 @@
+body{
+  	font-family: "Raleway", sans-serif;
+  	font-size: 14px;
+  	color: #091722;
+}
+
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+
+.center{
+	text-align: center;
+}
+
+.barra{
+	padding: 15px;
+}
+
+.logo{
+	display: inline-block;
+	float: left;
+}
+
+.nav-menu{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.nav-menu ul{
+	list-style: none;
+	display: inline-block;
+}
+
+.nav-menu ul li{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+	color: grey;
+}
+
+a:hover{
+	text-decoration: none;
+	color: darkgrey;
+}
+
+a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+.updates{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: url(../img/indexbanner-bg3.jpg);
+	height: 450px;
+	background-position: top center;
+	margin-bottom: -30px;
+}
+
+h1{
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	padding-top: 120px;
+	padding-left: 150px;
+}
+
+.services{
+	margin: auto;
+}
+
+.services p{
+	display: block;
+	text-align: center;
+}
+
+.updates p{
+	text-align: left;
+	color: #FFFFFF;
+	padding-top: 30px;
+	padding-left: 150px;
+	max-width: 30%;
+}
+
+.search{
+	vertical-align: middle;
+	width: 600px;
+	height: 50px;
+	background-color: white;
+	z-index: 2;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+.search input{
+	display: inline-block;
+}
+
+.search form{
+	display: inline-block;
+	padding-top: 5px;
+}
+
+.flotarder{
+	float: right;
+}
+
+.floatizq{
+	float: left;
+}
+
+input[type=text]{
+	padding: 20px 0px 0px 20px;
+	border: 0;
+	font-size: inherit;
+	width: 450px;
+}
+
+input[type=submit]{
+	height: 50px;
+	width: 80px;
+	font-size: inherit;
+	color: white;
+	background-color: #00afff;
+	text-align: center;
+	border-style: none;
+}
+
+.overflow{
+	overflow: auto;
+}
+
+.overflow article{
+	display: inline-block;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+section.center article p{
+	color: grey;
+}
+
+.puntitos{
+	margin-top: 50px;
+}
+
+section.center article h3{
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #091722;
+}
+
+section.flotar article h4{
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #091722;
+}
+
+section.flotar{
+	display: inline-block;
+	max-width: 25%;
+}
+
+section.flotar article{
+	display: block;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+section.izq article img{
+	position: absolute;
+	right: -50px;
+	padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-align: right;
+}
+
+section.der article img{
+	position: absolute;
+	right: 200px;
+}
+
+section.izq article p{
+	display: inline-block;
+	text-align: right;
+}
+
+section.der article p{
+	display: inline-block;
+	text-align: left;
+}
+
+section.flotar article p{
+	font-family: "Open Sans", sans-serif;
+	color: grey;
+}
+
+section.izq article{
+	text-align: right;
+}
+
+.flotarder article{
+	text-align: left;
+}
+
+.iphone{
+	display: inline-block;
+}
+
+h2{
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-variant: capitalize;
+	font-size: 35px;
+	color: grey;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #091722;
+}
+
+img{
+	display: block;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+div.precios{
+	text-align: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background: url(../img/pricing-bg.jpg);
+	background-position: top center;
+	margin-top: -100px;
+	padding-top: 120px;
+	margin-bottom: 200px;
+}
+
+div.precios article{
+	width: 20%;
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 10px;
+	background-color: white;
+	-webkit-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
+    -moz-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
+	box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
+}
+
+.mount{
+	color: grey;
+}
+
+ul.green span{
+	color: green;
+}
+
+ul.yellow span{
+	color: yellow;
+}
+
+ul.orange span{
+	color: orange;
+}
+
+ul.red span{
+	color: red;
+}
+
+div.precios ul{
+	list-style: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+div.precios ul li{
+	margin-bottom: 20px;
+}
+
+h4{
+	font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.test99{
+	font-size: 40px;
+	margin-bottom: 5px; 
+}
+
+.test99:after{
+	content: ".99";
+	font-size: 16px;
+	position: relative;
+	top: -16px;
+}
+
+.test99:before{
+	font-size: 16px;
+	content: "$";
+	position: relative;
+	top: -16px;
+}
+
+input[value="select plan"]{
+	height: 35px;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	background-color: #00afff;
+	text-align: center;
+	border-style: none;
+}
+
+.azul{
+	background: #142e3f;
+	color: white;
+}
+
+footer{
+	background: #091722;
+	color: white;
+}
+
+.hosting{
+	padding: 100px 0px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.hosting a{
+	font-size: 22px;
+	color: #00afff;
+	font-weight: bold;
+}
+
+.pie{
+	padding: 30px 0px;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.pie p{
+	float: left;
+}
+
+.pie ul{
+	display: inline-block;
+	float: right;
+}
+
+.pie ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+/*  siempre tengo que poner el content
+	para que funcione el :after 
+	sirve para ponerle algo por adelante o atras
+	al elemento que yo quiera, por ejemplo el 49,99
+
+	position static no me deja mover el elemento ni
+	asignarle margin ni padding
+*/
