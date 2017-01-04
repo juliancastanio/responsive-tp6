@@ -147,12 +147,26 @@ input[type=submit]{
 	margin-bottom: 10px;
 }
 
+.overflow article img{
+	transition: transform 1s;
+}
+
 section.center article p{
 	color: grey;
 }
 
 .puntitos{
 	margin-top: 50px;
+}
+
+.iphone{
+	vertical-align: middle;
+	margin-top: 20px;
+	max-width: 33%;
+}
+
+.iphone img{
+	transition: transform 1s;
 }
 
 section.center article h3{
@@ -163,7 +177,7 @@ section.center article h3{
 	color: #091722;
 }
 
-section.flotar article h4{
+section.iphone article h4{
 	text-transform: uppercase;
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
@@ -171,29 +185,30 @@ section.flotar article h4{
 	color: #091722;
 }
 
-section.flotar{
-	display: inline-block;
-	max-width: 25%;
-}
-
-section.flotar article{
+section.iphone article{
 	display: block;
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
+}
+
+section.izq{
+	padding-right: 70px;
+	box-sizing: border-box;
+}
+
+section.der{
+	padding-left: 80px;
+	box-sizing: border-box;
 }
 
 section.izq article img{
 	position: absolute;
-	right: -50px;
-	padding: 0px;
-    margin: 0px;
-    display: inline-block;
-    text-align: right;
+	right: -55px;
 }
 
 section.der article img{
 	position: absolute;
-	right: 200px;
+	left: -55px;
 }
 
 section.izq article p{
@@ -220,6 +235,7 @@ section.izq article{
 }
 
 .iphone{
+	max-width: 32%;
 	display: inline-block;
 }
 
@@ -253,7 +269,7 @@ div.precios{
 }
 
 div.precios article{
-	width: 20%;
+	width: 22%;
 	box-sizing: border-box;
 	padding: 15px;
 	margin: 10px;
@@ -261,6 +277,28 @@ div.precios article{
 	-webkit-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
     -moz-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
 	box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
+}
+
+div.precios section{
+	margin-top: 30px;
+}
+
+div.precios ul{
+	list-style: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+div.precios ul li{
+	margin-bottom: 20px;
+}
+
+h4{
+	font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .mount{
@@ -281,24 +319,6 @@ ul.orange span{
 
 ul.red span{
 	color: red;
-}
-
-div.precios ul{
-	list-style: none;
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-
-div.precios ul li{
-	margin-bottom: 20px;
-}
-
-h4{
-	font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 40px;
 }
 
 .test99{
@@ -331,6 +351,7 @@ input[value="select plan"]{
 	background-color: #00afff;
 	text-align: center;
 	border-style: none;
+	transition: transform 1s;
 }
 
 .azul{
@@ -376,6 +397,22 @@ footer{
 	display: inline-block;
 	margin-right: 20px;
 }
+
+/*animaciones*/
+
+input[value="select plan"]:hover{
+	transform: scale(1.1);
+}
+
+section.overflow article img:hover{
+	transform: translateY(10px);
+}
+
+.iphone img:hover{
+	transform: scale(1.03);
+}
+
+
 
 /*  siempre tengo que poner el content
 	para que funcione el :after 
