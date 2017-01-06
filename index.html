@@ -10,9 +10,9 @@
 
 
 	<body>
-		<div class="contenedor barra overflow">
+		<div class="contenedor barra flex">
 			<img src="C:\CoderHouse\Web 1\Proyecto 1\TP3\img/header-logo.png" class="logo">
-			<nav class="nav-menu flotarder">
+			<nav class="nav-menu">
 				<ul>
 					<li>
 						<a href="">Home</a>
@@ -34,16 +34,16 @@
 
 
 
-		<div class="search contenedor center">
+		<div class="search contenedor flex center">
 			<form method="POST" action="enviar.php">
 				<input type="text" name="buscar" placeholder="Enter your domain name and hit enter" required>
 			</form>
-				<input type="submit" class="flotarder" name="search">
+				<input type="submit" name="search">
 		</div>
 
 
 
-		<section class="contenedor overflow center">
+		<section class="contenedor flex center">
 			<article>
 				<img src="C:\CoderHouse\Web 1\Proyecto 1\TP3\img\icons/wid1.png" alt="">
 
@@ -130,8 +130,10 @@
 				<img src="C:\CoderHouse\Web 1\Proyecto 1\TP3\img\icons/threedot.png" alt="" class="puntitos">
 				<h2>pricing tables</h2>
 				<p>Lorem ipsum dolor sit amet</p>
-				<section class="overflow">
-					<article class="floatizq">
+
+
+				<section class="flex">
+					<article>
 						<h4>small package</h4>
 						<p class="test99">15</p>
 						<span class="mount">/mount</span>
@@ -156,7 +158,7 @@
 						<input type="submit" value="select plan">
 					</article>
 
-					<article class="floatizq">
+					<article>
 						<h4>normal package</h4>
 						<p class="test99">49</p>
 						<span class="mount">/mount</span>
@@ -181,7 +183,7 @@
 						<input type="submit" value="select plan">
 					</article>
 
-					<article class="floatizq">
+					<article>
 						<h4>big package</h4>
 						<p class="test99">99</p>
 						<span class="mount">/mount</span>
@@ -206,7 +208,7 @@
 						<input type="submit" value="select plan">
 					</article>
 
-					<article class="floatizq">
+					<article>
 						<h4>best package</h4>
 						<p class="test99">199</p>
 						<span class="mount">/mount</span>
@@ -243,7 +245,7 @@
 	</body>
 
 	<footer>
-		<div class="contenedor pie overflow">
+		<div class="contenedor pie flex">
 			<p>© 2015 Hostro All rights reserved.</p>
 			<nav>
 				<ul>

@@ -11,6 +11,7 @@ body{
 
 .center{
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .barra{
@@ -19,7 +20,6 @@ body{
 
 .logo{
 	display: inline-block;
-	float: left;
 }
 
 .nav-menu{
@@ -27,17 +27,11 @@ body{
 	text-transform: uppercase;
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
-	font-size: 12px;
-	padding-top: 10px;
-}
-
-.nav-menu ul{
-	list-style: none;
-	display: inline-block;
 }
 
 .nav-menu ul li{
 	display: inline-block;
+	margin-right: 5px;
 }
 
 a{
@@ -93,30 +87,13 @@ h1{
 }
 
 .search{
-	vertical-align: middle;
-	width: 600px;
-	height: 50px;
+	width: 100%;
 	background-color: white;
-	z-index: 2;
 	padding-bottom: 30px;
-	overflow: auto;
 }
 
 .search input{
 	display: inline-block;
-}
-
-.search form{
-	display: inline-block;
-	padding-top: 5px;
-}
-
-.flotarder{
-	float: right;
-}
-
-.floatizq{
-	float: left;
 }
 
 input[type=text]{
@@ -136,19 +113,27 @@ input[type=submit]{
 	border-style: none;
 }
 
-.overflow{
-	overflow: auto;
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	flex-wrap: wrap;
 }
 
-.overflow article{
+.flex article{
 	display: inline-block;
 	margin: auto;
 	padding: 5px;
 	margin-bottom: 10px;
+	flex: 1;
 }
 
-.overflow article img{
+.flex article img{
 	transition: transform 1s;
+	display: block;
+	margin: auto;
+	padding-bottom: 20px;
 }
 
 section.center article p{
@@ -156,7 +141,10 @@ section.center article p{
 }
 
 .puntitos{
+	display: block;
 	margin-top: 50px;
+	margin: auto;
+	padding-bottom: 20px;
 }
 
 .iphone{
@@ -221,17 +209,13 @@ section.der article p{
 	text-align: left;
 }
 
-section.flotar article p{
+section.flex article p{
 	font-family: "Open Sans", sans-serif;
 	color: grey;
 }
 
 section.izq article{
 	text-align: right;
-}
-
-.flotarder article{
-	text-align: left;
 }
 
 .iphone{
@@ -250,15 +234,8 @@ h2{
 	color: #091722;
 }
 
-img{
-	display: block;
-	margin: auto;
-	padding-bottom: 20px;
-}
-
 div.precios{
 	text-align: center;
-	background-size: contain;
 	background-repeat: no-repeat;
 	background-origin: content-box;
 	background: url(../img/pricing-bg.jpg);
@@ -269,14 +246,13 @@ div.precios{
 }
 
 div.precios article{
-	width: 22%;
 	box-sizing: border-box;
-	padding: 15px;
-	margin: 10px;
+	padding: 20px 40px;
 	background-color: white;
 	-webkit-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
     -moz-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
 	box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.22);
+	flex: 0;
 }
 
 div.precios section{
@@ -284,7 +260,6 @@ div.precios section{
 }
 
 div.precios ul{
-	list-style: none;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -384,13 +359,8 @@ footer{
 	vertical-align: middle;
 }
 
-.pie p{
-	float: left;
-}
-
 .pie ul{
 	display: inline-block;
-	float: right;
 }
 
 .pie ul li{
@@ -404,7 +374,7 @@ input[value="select plan"]:hover{
 	transform: scale(1.1);
 }
 
-section.overflow article img:hover{
+section.flex article img:hover{
 	transform: translateY(10px);
 }
 
@@ -412,6 +382,82 @@ section.overflow article img:hover{
 	transform: scale(1.03);
 }
 
+
+/*media < 1024 px Ipad Pro*/
+
+@media (max-width: 1025px){
+	.contenedor{
+		max-width: 650px;
+	}
+
+	.barra, .pie{
+		flex-direction: column;
+	}	
+
+	.nav-menu ul li, .pie ul li{
+		display: block;
+		text-align: center;
+	    margin: 30px 0px;
+    	font-size: 16px;
+	}
+
+	header, img.puntitos{
+		display: none;
+	}
+
+	section.flex article{
+		flex: 48%;
+	}
+
+	div.precios article{
+		margin: 5px;
+	}
+
+	.iphone{
+		display: block;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	section.der article img, section.izq article img{
+		left: -55px;
+}
+	
+	section.izq article, section.der, section.izq article p{
+		text-align: left;
+	}
+
+	section.izq article p, section.der article p{
+		padding-left: 0px;
+	}
+
+	section.izq, section.der{
+		padding-left: 70px;
+	}
+
+	div.precios{
+		margin-top: 0px;
+	}
+
+
+@media (max-width: 451px){
+	.contenedor{
+		max-width: 300px;
+	}
+
+	section.flex article{
+		flex: 100%;
+	}
+
+	div.precios article{
+		margin: 15px;
+	}
+
+	input[type=text]{
+	width: 200px;
+	}
+
+}
 
 
 /*  siempre tengo que poner el content
